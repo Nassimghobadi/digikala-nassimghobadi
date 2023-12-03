@@ -1,0 +1,58 @@
+.part1--title{
+    display: flex;
+    margin: 30px 0 40px;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight:700 ;
+}
+
+.part1{
+    width: 100%;
+    height: 812px;
+    /*background-color: aqua;*/
+    display: flex;
+    flex-flow: row wrap;
+    gap: 70px;
+    justify-content: center;
+}
+.par1 .part1--container{
+    width: 210px;
+    height: 242px;
+}
+.part1 .part1--container a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    flex-flow: column wrap;
+    row-gap: 12px;
+}
+.part1 .part1--container a img{
+    width: 150px;
+    height: 150px;
+}
+.part1 .part1--container a img .img{
+    width: 100%;
+    height: 100%;
+}
+.part1 .part1--container .price{
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.part1 .part1--container a .price .p{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+}
+.part1 .part1--container a .price .discount{
+    font-size: 10px;
+    color: white;
+    background-color: red;
+    padding: 3px 6px;
+    border-radius: 8px;
+}

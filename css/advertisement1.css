@@ -1,0 +1,19 @@
+.advertisement{
+    width: 100%;
+    height: 234px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 100px;
+    justify-content:center;
+    align-items: center;
+    gap: 40px;
+}
+.advertisement .img{
+    width: 310px;
+    height: 234px;
+}
+.advertisement .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

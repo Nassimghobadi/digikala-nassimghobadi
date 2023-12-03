@@ -1,0 +1,32 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body, input::placeholder{
+    font-family: iranyekan, sans-serif;
+}
+html .goUp a{
+    width: 138px;
+    height: 40px;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    gap: 8px;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: white;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #c7c5c5;
+    font-size: 12px;
+    text-align: center;
+    margin-right: 90%;
+}
+html .goUp span{
+    width: 72px;
+    height: 26px;
+}

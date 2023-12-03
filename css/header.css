@@ -1,0 +1,282 @@
+header{
+    width: 100%;
+    /*background-color: deeppink;*/
+    box-shadow: -1px 0 4px #7a7a7a;
+    padding: 0 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    background-color: white;
+}
+/*banner*/
+header .banner{
+    width: 100%;
+    height: 60px;
+    /*background-color: blue;*/
+}
+header .banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/*end banner*/
+/*menu part 1*/
+header .menuPart1{
+    width: 100%;
+    height: 68px;
+    /*background-color: lime;*/
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+}
+header .menuPart1 .logo{
+    height: 100%;
+    /*background-color: deeppink;*/
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+
+}
+header .menuPart1 .search{
+    width: 600px;
+    height: 44px;
+    /*background-color: orange;*/
+}
+header .menuPart1 .search form{
+    width: 100%;
+    height: 100%;
+    /*background-color: blue;*/
+}
+header .menuPart1 .search form label{
+    width: 100%;
+    height: 100%;
+    /*background-color: gold;*/
+    position: relative;
+}
+header .menuPart1 .search form label svg{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: #B2B4B9;
+}
+header .menuPart1 .search form label input{
+    width: 100%;
+    height: 100%;
+    background-color: #F0F0F1;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding-right: 54px;
+    color: #888787;
+}
+header .menuPart1 .search form label input::placeholder{
+    font-size: 12px;
+}
+header .menuPart1 .buttons{
+    height: 100%;
+    /*background-color: aqua;*/
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+header .menuPart1 .buttons span{
+    color: silver;
+}
+header .menuPart1 .buttons a:first-child{
+    height: 40px;
+    padding: 16px;
+    /*background-color: deeppink;*/
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:rgb(12,12,12);
+    /*font-size: 12px;*/
+    border: 1px solid #e0e0e2;
+    border-radius: 8px;
+    gap: 4px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2.17;
+}
+header .menuPart1 .buttons a:last-child{
+    cursor: pointer;
+    font-size: 10px;
+}
+/*end of menu part1*/
+/*menu part2*/
+header .menuPart2{
+    width: 100%;
+    height: 40px;
+    /*background-color: lime;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .menuPart2 .menu{
+    /*background-color: deeppink;*/
+    height: 100%;
+    position: relative;
+}
+header .menuPart2 .menu .menu--nav{
+    /*background-color: gold;*/
+    height: 100%;
+}
+header .menuPart2 .menu .menu--nav .menu--list{
+   list-style-type: none;
+    display: flex;
+    align-items: center;
+    /*background-color: aqua;*/
+    height: 100%;
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item{
+    /*background-color: silver;*/
+    height: 100%;
+    padding: 0 12px;
+    position: relative;
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item::after{
+    content: "";
+    width: 100%;
+    display: block;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: all 300ms linear;
+    transform-origin: left;
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item:hover::after{
+    transform: scaleX(1);
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item .menu--link{
+    /*background-color: coral;*/
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #62666d;
+    font-size: 12px;
+    gap: 4px;
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item:first-child .menu--link{
+    font-size: 14px;
+    color: rgb(63, 64, 100);
+    font-weight: 700;
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item .menu2{
+    width: 150%;
+    height: calc(90dvh - 168px);
+    /*background-color: deeppink;*/
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item:hover .menu2{
+    display: block;
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item .menu2 .menu2--nav{
+    width: 100%;
+    height: 100%;
+    /*background-color: orange;*/
+    overflow: auto;
+    direction: ltr;
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item .menu2 .menu2--nav .menu2--list{
+    width: 100%;
+    height: 100%;
+    /*background-color: lime;*/
+    list-style-type: none;
+    direction: rtl;
+
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item .menu2 .menu2--nav .menu2--list .menu2--item{
+    width: 100%;
+    height: 50px;
+    background-color: #f5f3f3;
+    /*border-bottom: 1px solid black;*/
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item .menu2 .menu2--nav .menu2--list .menu2--item:hover{
+    background-color: white;
+    color: red;
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item .menu2 .menu2--nav .menu2--list .menu2--item:hover .menu2--link{
+    color: red;
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item .menu2 .menu2--nav .menu2--list .menu2--item .menu3{
+    /*background-color: deeppink;*/
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 60vw;
+    height: calc(90dvh - 168px);
+    display: none;
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item .menu2 .menu2--nav .menu2--list .menu2--item:hover .menu3{
+    display: block;
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item .menu2 .menu2--nav .menu2--list .menu2--item:first-child .menu3{
+    display: block;
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item .menu2 .menu2--nav .menu2--list .menu2--item .menu3 .menu3--nav{
+    width: 100%;
+    height: 100%;
+    /*background-color: orange;*/
+    overflow: auto;
+    direction: ltr;
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item .menu2 .menu2--nav .menu2--list .menu2--item .menu3 .menu3--nav .menu3--list{
+    width: 100%;
+    height: 100%;
+    /*background-color: gold;*/
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 24px;
+    row-gap: 30px;
+    direction: rtl;
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item .menu2 .menu2--nav .menu2--list .menu2--item .menu3 .menu3--nav .menu3--list .menu3--item{
+    flex-basis: 25%;
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item .menu2 .menu2--nav .menu2--list .menu2--item .menu3 .menu3--nav .menu3--list .menu3--item .menu3--link{
+    text-decoration: none;
+    color: #9f9f9f;
+    font-size: 12px;
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item .menu2 .menu2--nav .menu2--list .menu2--item .menu3 .menu3--nav .menu3--list .menu3--item .menu3--link:hover{
+    color: red;
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item .menu2 .menu2--nav .menu2--list .menu2--item svg{
+    margin-left: 8px;
+}
+header .menuPart2 .menu .menu--nav .menu--list .menu--item .menu2 .menu2--nav .menu2--list .menu2--item .menu2--link{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    padding-right: 16px;
+    align-items: center;
+    color: #838282;
+    font-size: 12px;
+}
+
+header .menuPart2 .openCity{
+    /*background-color: orange;*/
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: rgb(63, 64, 100);
+    gap: 4px;
+    cursor: pointer;
+}
+#openCity, #closeCity{
+    display: none;
+}
+

@@ -1,0 +1,76 @@
+.slider3{
+width: 100%;
+    height: 404px;
+    /*background-color: red;*/
+}
+ .slider3 .swiper {
+    width: 100%;
+    height: 100%;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+ .slider3 .swiper .title{
+     display: flex;
+     flex-flow: row nowrap;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height: 44px;
+     column-gap: 20px;
+     font-size: 21px;
+ }
+ .slider3 .swiper .title svg{
+     width: 24px;
+     height: 24px;
+ }
+
+ .slider3 .swiper-slide {
+     /*border: 1px solid black;*/
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: calc((86%) / 3) !important;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .slider3 .swiper-slide a{
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: space-between;
+     align-items: center;
+     text-decoration: none;
+     column-gap: 4px;
+ }
+ .slider3 .swiper-slide a span:first-of-type{
+     font-size: 2.6rem;
+     color: deepskyblue;
+     margin-left: 8px;
+ }
+ .slider3 .swiper-slide img{
+     width: 86px;
+     height: 56px;
+ }
+.slider3 .swiper-pagination-bullet{
+    width: 4px;
+    height: 4px;
+    transition: all 300ms linear;
+}
+.slider3 .swiper-pagination-bullet-active{
+    width: 16px;
+    height: 6px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.slider3 .swiper-button-next::after{
+    font-size: 20px;
+    color: black;
+}
+
+.slider3 .swiper-button-prev::after{
+    font-size: 20px;
+    color: black;
+}
